@@ -1,0 +1,17 @@
+Please enter your code review in this file as plain text
+and make sure to include it when you commit your project.
+
+1 Except class AddressBook, all other Classes should only have default
+  accessible. But Class Address, AddressBookIterator and Contact are public.
+
+2 In Validator class, method checkNullOrEmptyArg and checkNullArg have the same 
+  functionality. checkNullOrEmptyArg doesn't check an argument is empty or not.
+ 
+3 In Validator class, the thress method would better declare throws exception.
+
+4 The accessibility of Builder in Contact and Address would better is package
+  accessible, namely default accessibility.
+  
+5 In equals() method of Address and Contact, the code "if (this == otherAddress)
+  {...}" should put in the head of the method. It can be more quickly return in 
+  this way.
