@@ -1,4 +1,5 @@
-Course ProductionQualitySoftware @ NYU
+6 Labs in course ProductionQualitySoftware @ NYU.
+
 This course equips students with a mastery of the following:
 
 A ubiquitous, general-purpose, programming language.
