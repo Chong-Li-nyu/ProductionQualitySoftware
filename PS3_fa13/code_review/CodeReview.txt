@@ -1,0 +1,13 @@
+Please enter your code review in this file as plain text
+and make sure to include it when you commit your project.
+
+1. In 30th line of StopwatchFactory.java, don't need put add() in synchronized 
+block, because a single operation on sysnchronizedList doesn't need synchronized
+protection.
+
+2. The javadoc of getStopwatches method is supposed to clarify the return list 
+is an unmodifiableList
+
+3. It's better to use two different locks to synchronized isRunning and laps 
+in method lap() in Stopwatch. Or laps can be wrapped by synchronziedList(). In
+ this way thread can access the method more efficiently;
